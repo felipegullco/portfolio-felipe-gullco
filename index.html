@@ -1,254 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>De usuario a influencer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Felipe Gullco</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <aside class="sidebar">
-    <div class="logo">Ui</div>
+  <header>
+    <div class="logo">FG</div>
 
-    <a href="#inicio">⌂</a>
-    <a href="#aprender">▣</a>
-    <a href="#herramientas">✦</a>
-    <a href="#contenido">▶</a>
-    <a href="#comunidad">●</a>
-  </aside>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyecto">Proyecto</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
   <main>
-    <header>
-      <div>
-        <h2>De usuario a<br>influencer</h2>
-      </div>
-
-      <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#aprender">Aprender</a>
-        <a href="#herramientas">Herramientas</a>
-        <a href="#contenido">Contenido</a>
-        <a href="#comunidad">Comunidad</a>
-      </nav>
-
-      <div class="acciones">
-        <input id="buscador" type="text" placeholder="Buscar contenido..." />
-        <button onclick="cambiarModo()">Modo</button>
-      </div>
-    </header>
 
     <section id="inicio" class="hero">
       <div class="hero-texto">
-        <span class="tag">Plataforma educativa para creadores</span>
-        <h1>Aprendé a crear contenido desde cero</h1>
+        <span class="tag">Portfolio personal</span>
+        <h1>Felipe Gullco</h1>
+        <h2>Diseño y Comunicación</h2>
+
         <p>
-          Un espacio diseñado para jóvenes que quieren empezar como creadores,
-          mejorar su contenido, organizar ideas y construir una marca personal.
+          Soy estudiante de Diseño y Comunicación en la Universidad de Palermo.
+          Este portfolio presenta mi proyecto integrador y el proceso realizado durante la cursada.
         </p>
 
         <div class="botones">
-          <a href="#aprender" class="btn principal">Empezar guía</a>
-          <a href="#contenido" class="btn secundario">Ver ejemplos</a>
+          <a href="#proyecto" class="btn principal">Ver proyecto</a>
+          <a href="#contacto" class="btn secundario">Contacto</a>
         </div>
       </div>
 
-      <div class="hero-card">
-<img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=1000&q=80" alt="Influencer">          <h3>Tu progreso</h3>
-          <div class="barra">
-            <div id="progreso"></div>
+      <div class="hero-foto">
+        <img src="foto.jpg" alt="Foto de Felipe">
+      </div>
+    </section>
+
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+
+      <div class="contenedor-doble">
+        <div class="card">
+          <h3>Información personal</h3>
+<p><strong>Nombre:</strong> Felipe Gullco</p>
+<p><strong>Carrera:</strong> Diseño Digital</p>
+<p><strong>Año de cursada:</strong> Primer año</p>
+<p><strong>Universidad:</strong> Universidad de Palermo</p>
+        </div>
+
+        <div class="card">
+          <h3>Motivaciones y proyecciones</h3>
+          <p>
+           <p>
+Me interesa el diseño digital, la creación de contenido, las redes sociales y el desarrollo de proyectos visuales que conecten con públicos jóvenes. Disfruto explorar nuevas herramientas y aprender constantemente para mejorar mis habilidades creativas.
+</p>
+
+<p>
+A futuro me gustaría seguir desarrollando proyectos digitales, perfeccionar mis conocimientos en diseño web y crear propuestas visuales más profesionales que combinen creatividad, tecnología y comunicación.
+</p>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyecto" class="oscuro">
+      <h2>Proyecto destacado</h2>
+
+      <div class="proyecto-card">
+        <div>
+          <span class="tag">Proyecto Integrador</span>
+          <h3>De usuario a influencer</h3>
+          <p>
+            Plataforma web educativa destinada a jóvenes que quieren iniciarse como
+            creadores de contenido. El sitio ofrece guías, herramientas, consejos y una
+            comunidad para acompañar el crecimiento de nuevos creadores.
+          </p>
+
+          <div class="botones">
+            <a href="https://felipegullco.github.io/de-usuario-a-influencer-/" target="_blank" class="btn principal">
+              Ver sitio web
+            </a>
+
+            <a href="https://github.com/felipegullco/de-usuario-a-influencer-" target="_blank" class="btn secundario">
+              Ver GitHub
+            </a>
           </div>
-          <p><span id="porcentaje">0%</span> completado</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="intro">
-      <div>
-        <h2>¿Qué hace diferente a esta página?</h2>
-        <p>
-          No es una red social para scrollear. Es una guía interactiva para aprender,
-          practicar, mejorar y crecer como creador principiante.
-        </p>
-      </div>
-
-      <div class="mini-cards">
-        <div>Guías claras</div>
-        <div>Herramientas útiles</div>
-        <div>Comunidad</div>
-        <div>Progreso personal</div>
-      </div>
-    </section>
-
-    <section id="aprender">
-      <h2>Aprender</h2>
-      <p class="subtitulo">Pasos simples para empezar sin experiencia previa.</p>
-
-      <div class="cards">
-        <article class="card" data-texto="primeros pasos estilo publico creador">
-          <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=80">
-          <h3>Primeros pasos</h3>
-          <p>Definí tu estilo, público objetivo y tipo de contenido.</p>
-          <button onclick="sumarProgreso()">Marcar como visto</button>
-        </article>
-
-        <article class="card" data-texto="marca personal identidad visual comunicacion">
-          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80">
-          <h3>Marca personal</h3>
-          <p>Construí una identidad visual y una forma propia de comunicar.</p>
-          <button onclick="sumarProgreso()">Marcar como visto</button>
-        </article>
-
-        <article class="card" data-texto="storytelling audiencia historias contenido">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80">
-          <h3>Storytelling</h3>
-          <p>Aprendé a contar historias que conecten con tu audiencia.</p>
-          <button onclick="sumarProgreso()">Marcar como visto</button>
-        </article>
-      </div>
-    </section>
-
-    <section id="herramientas" class="oscura">
-      <h2>Herramientas</h2>
-      <p class="subtitulo">Recursos para mejorar la calidad de tus publicaciones.</p>
-
-      <div class="cards">
-        <article class="card" data-texto="edicion video capcut canva premiere">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80">
-          <h3>Edición de video</h3>
-          <p>Aprendé a editar videos con ritmo, cortes, textos y música.</p>
-<a href="#edicion-video" class="boton-card">Explorar</a>        </article>
-
-        <article class="card" data-texto="iluminacion audio grabar celular calidad">
-          <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80">
-          <h3>Iluminación y audio</h3>
-          <p>Mejorá tus videos con luz, sonido y encuadres simples.</p>
-          <button onclick="sumarProgreso()">Explorar</button>
-        </article>
-
-        <article class="card" data-texto="planificacion calendario ideas constancia">
-          <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80">
-          <h3>Planificación</h3>
-          <p>Organizá ideas, fechas y objetivos para publicar con constancia.</p>
-          <button onclick="sumarProgreso()">Explorar</button>
-        </article>
-      </div>
-    </section>
-<section id="edicion-video" class="detalle-herramienta">
-  <div>
-    <span class="tag">Herramienta destacada</span>
-    <h2>Edición de video</h2>
-    <p>
-      La edición de video sirve para mejorar el ritmo del contenido, cortar partes innecesarias,
-      agregar música, subtítulos, imágenes, memes y efectos visuales. Es una parte clave para que
-      un video sea más atractivo en redes sociales como TikTok, Instagram o YouTube Shorts.
-    </p>
-  </div>
-
-  <div class="detalle-grid">
-
-    <a href="https://www.youtube.com/results?search_query=tutorial+capcut+español+principiantes"
-       target="_blank">
-
-      <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=900&q=80"
-           alt="Tutorial de edición de video">
-
-    </a>
-
-    <div class="detalle-info">
-      <h3>¿Qué podés aprender?</h3>
-      <p>• Cortar y ordenar clips</p>
-      <p>• Agregar música y sonidos</p>
-      <p>• Usar subtítulos automáticos</p>
-      <p>• Hacer zooms, transiciones y efectos</p>
-      <p>• Exportar videos para redes sociales</p>
-    </div>
-
-  </div>
-</section>
-    <section id="comunidad" class="comunidad">
-      <div>
-        <h2>Comunidad</h2>
-        <p>
-          Compartí avances, recibí feedback y conectá con otros creadores principiantes.
-        </p>
-      </div>
-
-      <div class="foro">
-        <div class="mensaje">
-          <strong>Valentina</strong>
-          <p>“Aprendí a organizar mis ideas antes de grabar.”</p>
         </div>
 
-        <div class="mensaje">
-          <strong>Tomás</strong>
-          <p>“Ahora entiendo mejor qué contenido le interesa a mi público.”</p>
-        </div>
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Proyecto">      </div>
+    </section>
 
-        <form onsubmit="agregarMensaje(event)">
-          <input id="nombre" type="text" placeholder="Tu nombre">
-          <input id="comentario" type="text" placeholder="Compartí una idea...">
-          <button>Publicar</button>
-        </form>
+    <section id="habilidades">
+      <h2>Habilidades y herramientas</h2>
 
-        <div id="nuevosMensajes"></div>
+      <div class="grid">
+        <div class="mini-card">HTML</div>
+        <div class="mini-card">CSS</div>
+        <div class="mini-card">Visual Studio Code</div>
+        <div class="mini-card">Figma</div>
+        <div class="mini-card">Canva</div>
+        <div class="mini-card">Diseño UI</div>
+        <div class="mini-card">Wireframes</div>
+        <div class="mini-card">Identidad visual</div>
       </div>
     </section>
 
-    <footer>
-      <h3>De usuario a influencer</h3>
-      <p>Proyecto Integrador · Felipe Gullco</p>
-    </footer>
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+
+      <div class="contacto-card">
+       <p><strong>Email:</strong> felipegullco@gmail.com</p>
+<p><strong>GitHub:</strong> github.com/felipegullco</p>>
+      </div>
+    </section>
+
   </main>
 
-  <script>
-    let progreso = 0;
-
-    function sumarProgreso() {
-      if (progreso < 100) {
-        progreso += 10;
-      }
-
-      document.getElementById("progreso").style.width = progreso + "%";
-      document.getElementById("porcentaje").innerText = progreso + "%";
-    }
-
-    function cambiarModo() {
-      document.body.classList.toggle("modo-claro");
-    }
-
-    const buscador = document.getElementById("buscador");
-    const cards = document.querySelectorAll(".card");
-
-    buscador.addEventListener("keyup", function () {
-      const texto = buscador.value.toLowerCase();
-
-      cards.forEach(card => {
-        const contenido = card.innerText.toLowerCase() + card.dataset.texto;
-        card.style.display = contenido.includes(texto) ? "block" : "none";
-      });
-    });
-
-    function agregarMensaje(event) {
-      event.preventDefault();
-
-      const nombre = document.getElementById("nombre").value;
-      const comentario = document.getElementById("comentario").value;
-
-      if (nombre && comentario) {
-        const contenedor = document.getElementById("nuevosMensajes");
-        contenedor.innerHTML += `
-          <div class="mensaje">
-            <strong>${nombre}</strong>
-            <p>“${comentario}”</p>
-          </div>
-        `;
-
-        document.getElementById("nombre").value = "";
-        document.getElementById("comentario").value = "";
-      }
-    }
-  </script>
+  <footer>
+    <p>Felipe Gullco · Universidad de Palermo · 2026</p>
+  </footer>
 
 </body>
 </html>
